@@ -6,34 +6,45 @@
     tools:context=".MainActivity">
 
 
-<ImageView
-        android:layout_width="wrap_content"
+    <ImageView
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/dogyear"/>
+        android:src="@drawable/dogyear" />
 
     <TextView
+        android:id="@+id/happy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:fontFamily="serif-monospace"
-        android:padding="40dp"
-        android:textSize="32sp"
-        android:textColor="@android:color/black"
+        android:fontFamily="sans-serif"
+        android:paddingTop="16dp"
+        android:textSize="40dp"
+        android:textColor="@android:color/holo_orange_dark"
         android:text="HAPPY CHINESE"
          />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/happy"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="32dp"
+        android:text="NEW YEAR" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:fontFamily="serif-monospace"
-        android:padding="40dp"
-        android:textSize="34sp"
-        android:textColor="@android:color/black"
-        android:text="NEW YEAR!"
-         />
+        android:layout_marginBottom="32dp"
+        android:fontFamily="sans-serif"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="32dp"
+        android:text="YEAR OF THE DOG!"/>
 
 </RelativeLayout>
